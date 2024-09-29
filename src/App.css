@@ -1,49 +1,56 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap');
+
+.header {
+    background-color: #2ecc71;
+    height: 70px;
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
-.App-logo {
-  height: 35vmin;
-  pointer-events: none;
+.header_logo {
+    margin-top: 17px;
+    margin-left: 19px;
+    width: 165px;
+    height: 35px;
+    opacity: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header_search {
+    font-family: 'Ubuntu', system-ui;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 85px;
+    width: 326px;
+    height: 39px;
+    background: var(--unnamed-color-f8f8f8) 0% 0% no-repeat padding-box;
+    background: #a7e7c2 0% 0% no-repeat padding-box;
+    background-blend-mode: overlay;
+    border-radius: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header_search_svg {
+    margin-top: 13px;
+    margin-left: 18px;
+    width: 12px;
+    height: 13px;
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) 12px/15px
+        var(--unnamed-font-family-font-awesome-5-pro);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-f8f8f8);
+    text-align: left;
+    font: normal normal normal 12px/15px Font Awesome 5 Pro;
+    letter-spacing: 0px;
+
+    opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.images img {
-  min-width: 100px;
-  height: auto;
-  margin: 5px;
+.header_search_placeholder {
+    color: white;
+    margin-top: 11px;
+    margin-left: 20px;
 }
