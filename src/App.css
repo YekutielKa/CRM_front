@@ -53,3 +53,117 @@
     font: normal normal normal 16px/18px Ubuntu;
     color: #f8f8f8;
 }
+
+.content {
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.content_navigate_create {
+    margin-top: 15px;
+    margin-left: 19px;
+    width: 122px;    height: 50px;
+    background: #2ecc71 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    div {
+        padding-top: 10px;
+        padding-left: 45px;
+        width: 54px;
+        height: 20px;
+        text-align: center;
+        font: normal normal normal 18px/27px Ubuntu;
+        color: #f8f8f8;
+    }
+}
+
+.content_navigate_active {
+    margin-top: 15px;
+    margin-left: 0px;
+    width: 225px;
+    height: 40px;
+    background: #2ecc71 0% 0% no-repeat padding-box;
+    border-radius: 0px 20px 20px 0px;
+    div {
+        padding-top: 7px;
+        padding-left: 65px;
+        width: 45px;
+        height: 18px;
+        text-align: left;
+        font: normal normal normal 16px/18px Ubuntu;
+        color: #f8f8f8;
+    }
+}
+
+.content_navigate_contacts {
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 225px;
+    height: 40px;
+    background: #a7e7c2 0% 0% no-repeat padding-box;
+    border-radius: 0px 20px 20px 0px;
+    div {
+        padding-top: 7px;
+        padding-left: 65px;
+        width: 45px;
+        height: 18px;
+        text-align: left;
+        font: normal normal normal 16px/18px Ubuntu;
+        color: #2ecc71;
+    }
+}
+
+.content_navigate_group {
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 225px;
+    height: 40px;
+    background: #a7e7c2 0% 0% no-repeat padding-box;
+    border-radius: 0px 20px 20px 0px;
+    div {
+        padding-top: 7px;
+        padding-left: 65px;
+        width: 45px;
+        height: 18px;
+        text-align: left;
+        font: normal normal normal 16px/18px Ubuntu;
+        color: #2ecc71;
+    }
+}
+
+.content_navigate_students {
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 225px;
+    height: 40px;
+    background: #a7e7c2 0% 0% no-repeat padding-box;
+    border-radius: 0px 20px 20px 0px;
+    div {
+        padding-top: 7px;
+        padding-left: 65px;
+        width: 45px;
+        height: 18px;
+        text-align: left;
+        font: normal normal normal 16px/18px Ubuntu;
+        color: #2ecc71;
+    }
+}
+
+.content_navigate_lecturers {
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 225px;
+    height: 40px;
+    background: #a7e7c2 0% 0% no-repeat padding-box;
+    border-radius: 0px 20px 20px 0px;
+    div {
+        padding-top: 7px;
+        padding-left: 65px;
+        width: 45px;
+        height: 18px;
+        text-align: left;
+        font: normal normal normal 16px/18px Ubuntu;
+        color: #2ecc71;
+    }
+}
