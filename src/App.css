@@ -37,20 +37,19 @@
     margin-left: 18px;
     width: 12px;
     height: 13px;
-    font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 12px/15px
-        var(--unnamed-font-family-font-awesome-5-pro);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-f8f8f8);
-    text-align: left;
     font: normal normal normal 12px/15px Font Awesome 5 Pro;
-    letter-spacing: 0px;
-
-    opacity: 1;
 }
 
 .header_search_placeholder {
     color: white;
     margin-top: 11px;
     margin-left: 20px;
+}
+.header_signout {
+    margin-top: 24px;
+    margin-left: 670px;
+    width: 60px;
+    height: 18px;
+    font: normal normal normal 16px/18px Ubuntu;
+    color: #f8f8f8;
 }

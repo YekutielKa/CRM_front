@@ -13,7 +13,9 @@ function App() {
                     />
                     <text className="header_search_placeholder">Search</text>
                 </div>
+                <text className='header_signout'>Sign out</text>
             </header>
+            
         </div>
     );
 }
