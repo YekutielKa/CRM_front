@@ -8,6 +8,21 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    input{
+        border: none;
+        background-image: url(/public/search.svg);
+        background-position: 5%;
+        background-size: 13px;
+        padding-left: 50px;
+    }
+    input::placeholder {
+        color: #f8f8f8;
+        font-size: 15px;
+    }
+    input:focus{
+        color: #f8f8f8;
+    }
+    
 }
 
 .header_logo {
@@ -18,36 +33,23 @@
     opacity: 1;
 }
 
-.header_search {
+.header_serach {
+    /* border: none; */
     font-family: 'Ubuntu', system-ui;
     display: flex;
     flex-direction: row;
-    margin-top: 15px;
+    margin-top: 13px;
     margin-left: 85px;
     width: 326px;
     height: 39px;
-    background: var(--unnamed-color-f8f8f8) 0% 0% no-repeat padding-box;
     background: #a7e7c2 0% 0% no-repeat padding-box;
-    background-blend-mode: overlay;
     border-radius: 25px;
+   
 }
 
-.header_search_svg {
-    margin-top: 13px;
-    margin-left: 18px;
-    width: 12px;
-    height: 13px;
-    font: normal normal normal 12px/15px Font Awesome 5 Pro;
-}
-
-.header_search_placeholder {
-    color: white;
-    margin-top: 11px;
-    margin-left: 20px;
-}
 .header_signout {
     margin-top: 24px;
-    margin-left: 670px;
+    margin-left: 570px;
     width: 60px;
     height: 18px;
     font: normal normal normal 16px/18px Ubuntu;
