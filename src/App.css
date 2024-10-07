@@ -34,7 +34,6 @@
 }
 
 .header_serach {
-    /* border: none; */
     font-family: 'Ubuntu', system-ui;
     display: flex;
     flex-direction: row;
@@ -70,6 +69,7 @@
     background: #2ecc71 0% 0% no-repeat padding-box;
     border-radius: 25px;
     div {
+        background-image: url(/public/create.svg);
         padding-top: 10px;
         padding-left: 45px;
         width: 54px;

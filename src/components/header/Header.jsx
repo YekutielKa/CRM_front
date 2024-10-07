@@ -4,11 +4,11 @@ import Search from './Search';
 class Header extends Component {
     render() {
         return (
-            <header className="header">
+            <div className="header">
                 <img className="header_logo" src="logo.svg" alt="logo" />
                 <Search />
-                <text className="header_signout">Sign out</text>
-            </header>
+                <p className="header_signout">Sign out</p>
+            </div>
         );
     }
 }
