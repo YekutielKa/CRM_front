@@ -1,3 +1,114 @@
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type='submit'] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap');
 
 .header {
@@ -8,7 +119,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    input{
+    input {
         border: none;
         background-image: url(/public/search.svg);
         background-position: 5%;
@@ -19,10 +130,9 @@
         color: #f8f8f8;
         font-size: 15px;
     }
-    input:focus{
+    input:focus {
         color: #f8f8f8;
     }
-    
 }
 
 .header_logo {
@@ -31,6 +141,7 @@
     width: 165px;
     height: 35px;
     opacity: 1;
+    cursor: pointer;
 }
 
 .header_serach {
@@ -38,12 +149,11 @@
     display: flex;
     flex-direction: row;
     margin-top: 13px;
-    margin-left: 85px;
+    margin-left: 60px;
     width: 326px;
     height: 39px;
     background: #a7e7c2 0% 0% no-repeat padding-box;
     border-radius: 25px;
-   
 }
 
 .header_signout {
@@ -53,19 +163,21 @@
     height: 18px;
     font: normal normal normal 16px/18px Ubuntu;
     color: #f8f8f8;
+    cursor: pointer;
 }
 
-.content {
+.wrapper {
     width: 1366px;
     margin: auto;
     display: flex;
     flex-direction: row;
 }
 
-.content_navigate_create {
+.navigate_create {
     margin-top: 15px;
     margin-left: 19px;
-    width: 122px;    height: 50px;
+    width: 122px;
+    height: 50px;
     background: #2ecc71 0% 0% no-repeat padding-box;
     border-radius: 25px;
     div {
@@ -80,7 +192,7 @@
     }
 }
 
-.content_navigate_active {
+.navigate_active {
     margin-top: 15px;
     margin-left: 0px;
     width: 225px;
@@ -98,12 +210,12 @@
     }
 }
 
-.content_navigate_contacts {
+.navigate_contacts {
     margin-top: 5px;
     margin-left: 0px;
     width: 225px;
     height: 40px;
-    background: #a7e7c2 0% 0% no-repeat padding-box;
+    background: #d5f5e3 0% 0% no-repeat padding-box;
     border-radius: 0px 20px 20px 0px;
     div {
         padding-top: 7px;
@@ -116,12 +228,12 @@
     }
 }
 
-.content_navigate_group {
+.navigate_group {
     margin-top: 5px;
     margin-left: 0px;
     width: 225px;
     height: 40px;
-    background: #a7e7c2 0% 0% no-repeat padding-box;
+    background: #d5f5e3 0% 0% no-repeat padding-box;
     border-radius: 0px 20px 20px 0px;
     div {
         padding-top: 7px;
@@ -134,12 +246,12 @@
     }
 }
 
-.content_navigate_students {
+.navigate_students {
     margin-top: 5px;
     margin-left: 0px;
     width: 225px;
     height: 40px;
-    background: #a7e7c2 0% 0% no-repeat padding-box;
+    background: #d5f5e3 0% 0% no-repeat padding-box;
     border-radius: 0px 20px 20px 0px;
     div {
         padding-top: 7px;
@@ -152,12 +264,12 @@
     }
 }
 
-.content_navigate_lecturers {
+.navigate_lecturers {
     margin-top: 5px;
     margin-left: 0px;
     width: 225px;
     height: 40px;
-    background: #a7e7c2 0% 0% no-repeat padding-box;
+    background: #d5f5e3 0% 0% no-repeat padding-box;
     border-radius: 0px 20px 20px 0px;
     div {
         padding-top: 7px;
@@ -168,4 +280,88 @@
         font: normal normal normal 16px/18px Ubuntu;
         color: #2ecc71;
     }
+}
+
+.content {
+    width: 1093px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.content_header {
+    height: 50px;
+    background-color: #3eb470;
+
+    border-radius: 25px 25px 0px 0px;
+    .sortBy {
+        background-color: #f8f8f8;
+        width: 168px;
+        height: 25px;
+        margin-left: 870px;
+        margin-top: 20px;
+    }
+}
+
+.content_students {
+    margin-top: 15px;
+    border-left: 1px solid gray;
+    height: 100%;
+}
+
+.studentMin {
+    border-bottom: 1px solid grey;
+    padding-top: 15px;
+    margin-left: 25px;
+    img {
+        vertical-align: 4.5px;
+    }
+    p {
+        display: inline;
+        vertical-align: 5px;
+        padding-left: 5px;
+        height: 18px;
+        font: normal normal bold 16px/18px Ubuntu;
+        color: #2b2d2f;
+    }
+}
+
+.studentMin_bell {
+    display: inline;
+    vertical-align: -4px;
+    margin-left: 900px;
+}
+
+.studentMin_info {
+    img {
+        margin-left: 15px;
+    }
+    p {
+        vertical-align: 9px;
+        margin-left: 5px;
+        height: 16px;
+        text-align: left;
+        font: normal normal normal 14px/16px Ubuntu;
+        color: #2b2d2f;
+    }
+}
+
+.studentMin_location {
+    display: inline;
+    margin-left: 60px;
+}
+
+.studentMin_email {
+    margin-left: 18px;
+    p {
+        vertical-align: 9px;
+        margin-left: 6px;
+        height: 16px;
+        font: normal normal normal 14px/16px Ubuntu;
+        color: #2b2d2f;
+    }
+}
+
+.studentMin_book {
+    display: inline;
+    margin-left: 93px;
 }

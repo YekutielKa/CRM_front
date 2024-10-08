@@ -3,29 +3,28 @@ import React, { Component } from 'react';
 class Navigate extends Component {
     render() {
         return (
-            <div className="content">
-                <div className="content_navigate">
-                    <div className="content_navigate_create">
+            <>
+                <div className="navigate">
+                    <div className="navigate_create">
                         <div>Create</div>
                     </div>
-                    <div className="content_navigate_active">
+                    <div className="navigate_active">
                         <div>Active</div>
                     </div>
-                    <div className="content_navigate_contacts">
+                    <div className="navigate_contacts">
                         <div>Contacts</div>
                     </div>
-                    <div className="content_navigate_group">
+                    <div className="navigate_group">
                         <div>Group</div>
                     </div>
-                    <div className="content_navigate_students">
+                    <div className="navigate_students">
                         <div>Students</div>
                     </div>
-                    <div className="content_navigate_lecturers">
+                    <div className="navigate_lecturers">
                         <div>Lecturers</div>
                     </div>
                 </div>
-                <div className="content_data"></div>
-            </div>
+            </>
         );
     }
 }
